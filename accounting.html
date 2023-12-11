@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Yazdi</title>
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="register" id="register">
+            <div class="top-button">
+                <button onclick="change_form(true)">ثبت نام</button>
+            </div>
+            <form>
+                <div>
+                    <input type="text" placeholder="نام کاربری" required>
+                    <input type="password" placeholder="کلمه عبور" required>
+                    <input type="password" placeholder="تکرار کلمه عبور" required>
+                    <input type="submit" value="ثبت نام" id="button1">
+                </div>
+            </form>
+        </div>
+        <div class="login" id="login">
+            <form>
+                <div class="top-button" id="input-button">
+                    <button onclick="change_form(false)">ورود</button>
+                </div>
+                <div>
+                    <input type="email" placeholder="ایمیل" required>
+                    <input type="password" placeholder="رمز عبور" required>
+                    <input type="submit" value="ورود" id="button2">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
